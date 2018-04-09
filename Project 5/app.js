@@ -8,7 +8,7 @@ $.ajax({
     console.log(typeof data);
     console.log(data);
     let employee = '<ul>';
-    $.each(data.results, function(i, empData) {
+    $.each(data.results, function(i) {
          employee += '<img src="'+ empData.results[i].picture.medium +'">';
          employee += '<li>' + data.results[i].name.first + '</li>';
          employee += '<li>' + data.results[i].name.last + '</li>';
