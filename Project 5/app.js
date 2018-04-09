@@ -9,11 +9,11 @@ $.ajax({
     console.log(data);
     let employee = '<ul>';
     $.each(data.results, function(i, empData) {
-         employee += '<img src"'+ empData.results[i].picture.medium +'">';
-         employee += '<li>' + empData.results[i].name.first + '</li>';
-         employee += '<li>' + empData.results[i].name.last + '</li>';
-         employee += '<li>' + empData.results[i].email + '</li>';
-         employee += '<li>' + empData.results[i].location.city + '</li>';
+         employee += '<img src="'+ empData.results[i].picture.medium +'">';
+         employee += '<li>' + data.results[i].name.first + '</li>';
+         employee += '<li>' + data.results[i].name.last + '</li>';
+         employee += '<li>' + data.results[i].email + '</li>';
+         employee += '<li>' + data.results[i].location.city + '</li>';
     });
     employeeHTML += '</ul>';
     $('#personel').html(employee);
