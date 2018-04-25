@@ -161,7 +161,7 @@ function displayModal(clicked) {
 // listener for search button
 $('#name').change(function (e) {
   let search = $('#name').val().toLowerCase();
-  let clicked = employees.find(x => x.name.first === search || x.name.last === search || x.username === search);
+  let clicked = employees.find(x => x.name.first.includes(search) || x.name.last.includes(search) || x.username.includes(search));
   if(clicked === undefined){
     alert('no such employee');
   }
