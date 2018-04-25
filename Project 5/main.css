@@ -29,8 +29,8 @@ body {
 .modal{
   display: flex;
   flex-direction: column;
-  width: 350px;
-  height: 320px;
+  width: 370px;
+  height: 340px;
   background-color: #FFF;
   border-style: solid;
   border-width: 2px;
@@ -50,6 +50,10 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.longProfile img {
+  width: 90px;
+  height: 100px;
 }
 .container {
 	display: flex;
